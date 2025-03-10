@@ -1,0 +1,76 @@
+.border-white {
+  border: 1px solid rgb(255, 255, 255);
+}
+
+.border-red {
+  border: 1px solid rgb(255, 0, 0);
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.padding-right {
+  padding-right: 1rem;
+}
+
+.bg-grey-b10 {
+  background-color: #121212;
+  border-radius: 10px;
+}
+
+.bg-lgrey-b10 {
+  background-color: #272727;
+  border-radius: 10px;
+}
+
+.color-l2grey {
+  color: #646464;
+}
+
+.margin-left-2 {
+  margin-left: 60%;
+}
+
+.card {
+  width: 97%;
+  padding: 30px;
+}
+
+.btn {
+  color: black;
+  padding: 7px 15px;
+  border-radius: 20px;
+  border: none;
+  text-align: center;
+}
+
+.btn-none {
+  background-color: transparent;
+  border: none;
+  color: white;
+}
+
+.font-size-20 {
+  font-size: 20px;
+}
+
+.font-size-30 {
+  font-size: 30px;
+}
+
+.font-size-15 {
+  font-size: 15px;
+}
+
+.font-size-10 {
+  font-size: 10px;
+}

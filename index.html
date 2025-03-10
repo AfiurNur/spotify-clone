@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify Clone</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="utility.css" />
+    <link rel="stylesheet" href="scrollbar.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <script defer src="script.js"></script>
+  </head>
+
+  <body>
+    <div class="container flex">
+      <div class="left">
+        <div class="home flex bg-grey-b10">
+          <ul class="flex">
+            <button class="btn-none">
+              <li><i class="ri-spotify-fill"></i>Spotify</li>
+            </button>
+            <button class="btn-none">
+              <li><i class="ri-home-6-fill padding-right"></i>Home</li>
+            </button>
+            <button class="btn-none">
+              <li><i class="ri-search-line padding-right"></i>Search</li>
+            </button>
+          </ul>
+        </div>
+        <div class="library flex bg-grey-b10 font-size-15">
+          <div class="library-top flex">
+            <button class="btn-none">
+              <i class="ri-book-shelf-line book-shelf"
+                ><span class="font-size-15 color-l2grey">Your library</span></i
+              >
+            </button>
+            <button class="btn-none"><i class="ri-add-line plus"></i></button>
+          </div>
+          <div class="library-bottom flex">
+            <div class="playlist-create bg-lgrey-b10 card">
+              <h2>Create your first playlist</h2>
+              <p>It's easy, we'll help you</p>
+              <button class="btn">Create playlist</button>
+            </div>
+            <div class="podcasts bg-lgrey-b10 card">
+              <h2>Let's find some podcasts to follow</h2>
+              <p>We'll keep you updated on new episodes</p>
+              <button class="btn">Browse podcasts</button>
+            </div>
+          </div>
+          <div class="footer">
+            <div class="links-top flex">
+              <a href="https://www.spotify.com/bd-en/legal/">Legal</a>
+              <a href="https://www.spotify.com/bd-en/safetyandprivacy/"
+                >Safety &amp; Privacy Center</a
+              >
+              <a href="https://www.spotify.com/bd-en/legal/privacy-policy/"
+                >Privacy Policy</a
+              >
+              <a href="https://www.spotify.com/bd-en/legal/cookies-policy/"
+                >Cookies</a
+              >
+              <a href="https://www.spotify.com/bd-en/legal/privacy-policy/#s3"
+                >About Ads</a
+              >
+            </div>
+            <div class="links-bottom flex">
+              <a href="https://www.spotify.com/bd-en/accessibility/"
+                >Accessibility</a
+              >
+              <a
+                href="https://www.spotify.com/legal/cookies-policy/"
+                target="_blank"
+                rel="noopener"
+                >Cookies</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="right bg-grey-b10">
+        <div class="right-header flex">
+          <div class="arrows flex">
+            <button class="btn-none">
+              <i class="ri-arrow-left-s-line"></i></button
+            ><button class="btn-none">
+              <i class="ri-arrow-right-s-line"></i>
+            </button>
+          </div>
+          <div class="login-signup">
+            <button class="btn-none">Sign up</button>
+            <button class="btn">Log in</button>
+          </div>
+        </div>
+        <div class="right-playlists">
+          <h1>Spotify Playlists</h1>
+          <div class="playlist-container flex">
+            <div class="playlistCard">
+              <div class="playlist-card flex">
+                <img
+                  src="https://i.scdn.co/image/ab67616d00001e0282ea2e9e1858aa012c57cd45"
+                  alt="album-image"
+                />
+                <button class="btn-none">
+                  <i class="ri-play-fill right-play"></i>
+                </button>
+                <div class="playlost-info">
+                  <h2>Happy Hits!</h2>
+                  <p>
+                    Hits to boost your with mood and fill you with happiness!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="playbar">
+          <div class="song-info">
+
+          </div>
+          <div class="song-btn">
+            <i class="ri-play-reverse-fill"></i>
+            <i class="ri-play-circle-fill"></i>
+            <i class="ri-play-fill"></i>
+          </div>
+          <div class="song-time">
+            
+          </div>
+        </div>
+        <div class="right-links"></div>
+      </div>
+    </div>
+  </body>
+</html>
