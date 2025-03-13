@@ -18,6 +18,9 @@
     <div class="container flex">
       <div class="left">
         <div class="home flex bg-grey-b10">
+          <div class="close-ham">
+            <i class="ri-close-circle-line"></i>
+          </div>
           <ul class="flex">
             <button class="btn-none">
               <li><i class="ri-spotify-fill"></i>Spotify</li>
@@ -39,17 +42,8 @@
             </button>
             <button class="btn-none"><i class="ri-add-line plus"></i></button>
           </div>
-          <div class="library-bottom flex">
-            <div class="playlist-create bg-lgrey-b10 card">
-              <h2>Create your first playlist</h2>
-              <p>It's easy, we'll help you</p>
-              <button class="btn">Create playlist</button>
-            </div>
-            <div class="podcasts bg-lgrey-b10 card">
-              <h2>Let's find some podcasts to follow</h2>
-              <p>We'll keep you updated on new episodes</p>
-              <button class="btn">Browse podcasts</button>
-            </div>
+          <div class="library-bottom songList">
+            <ul></ul>
           </div>
           <div class="footer">
             <div class="links-top flex">
@@ -83,6 +77,9 @@
       </div>
       <div class="right bg-grey-b10">
         <div class="right-header flex">
+          <div class="hamburger">
+            <i class="ri-menu-add-line"></i>
+          </div>
           <div class="arrows flex">
             <button class="btn-none">
               <i class="ri-arrow-left-s-line"></i></button
@@ -118,17 +115,21 @@
           </div>
         </div>
         <div class="playbar">
-          <div class="song-info">
-
+          <div class="seekbar">
+            <div class="line"></div>
+            <div class="circle"></div>
           </div>
           <div class="song-btn">
-            <i class="ri-play-reverse-fill"></i>
-            <i class="ri-play-circle-fill"></i>
-            <i class="ri-play-fill"></i>
+            <div class="songname"></div>
+            <div>
+              <i id="previous" class="ri-play-reverse-line"></i>
+              <img id="play" src="play.svg" alt="" />
+              <i id="next" class="ri-play-line"></i>
+            </div>
+
+            <div class="songtime"></div>
           </div>
-          <div class="song-time">
-            
-          </div>
+          <div class="song-time"></div>
         </div>
         <div class="right-links"></div>
       </div>
