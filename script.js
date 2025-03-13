@@ -109,7 +109,22 @@ async function main() {
     document.querySelector(".left").style.left = "0";
   });
   document.querySelector(".close-ham").addEventListener("click", () => {
-    document.querySelector(".left").style.left = "-100%";
+    document.querySelector(".left").style.left = "-120%";
+  });
+  document.querySelector(".info-small-screen").addEventListener("click", () => {
+    document.querySelector(".songname").style.opacity = "1";
+  });
+  previous.addEventListener("click", () => {
+    let currentIndex = songs.indexOf(currentSong.src.split("/songs/")[1]);
+    if (currentIndex > 0) {
+      playNow(songs[currentIndex - 1]);
+    }
+  });
+  next.addEventListener("click", () => {
+    let currentIndex = songs.indexOf(currentSong.src.split("/songs/")[1]);
+    if (currentIndex < songs.length - 1) {
+      playNow(songs[currentIndex + 1]);
+    }
   });
 }
 

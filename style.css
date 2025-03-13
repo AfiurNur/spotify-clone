@@ -159,6 +159,13 @@ i:hover {
   border-radius: 10px;
   margin-top: 16px;
   position: relative;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  filter: drop-shadow(0 0 0.75rem black);
+}
+
+.playlist-card:hover{
+  background-color: #2b2b2b;
 }
 
 .playlist-card img {
@@ -166,6 +173,7 @@ i:hover {
   height: 90%;
   object-fit: cover;
   border-radius: 10px;
+  filter: drop-shadow(0 0 0.75rem black);
 }
 
 .playlist-card h2 {
@@ -277,7 +285,7 @@ i:hover {
 }
 
 .library-bottom ul li {
-  font-size: 1vw;
+  font-size: 0.8vw;
   display: flex;
   flex: wrap;
   justify-content: space-between;
@@ -323,25 +331,34 @@ i:hover {
   display: none;
 }
 
-.close-ham{
+.close-ham {
+  display: none;
+}
+
+.info-small-screen {
   display: none;
 }
 
 @media (max-width: 1400px) {
   .left {
     position: absolute;
-    left: -100%;
+    left: -120%;
     transition: all 0.5s ease-in-out;
     z-index: 1;
     background-color: #080808;
     border-radius: 10px;
     width: 350px;
+    border: 2px solid #000000;
   }
   .right {
     width: 100vw;
+    margin: 0;
+    padding: 0;
+    height: 98.5vh;
   }
   .playbar {
-    width: 55%;
+    width: 70%;
+    right: 14%;
   }
 
   .hamburger {
@@ -358,12 +375,88 @@ i:hover {
   .arrows button {
     display: none;
   }
-  .close-ham{
+  .close-ham {
     display: block;
     position: absolute;
     top: 10px;
     right: 20px;
     font-size: 20px;
     color: white;
+  }
+  .footer {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .library-bottom ul li {
+    font-size: 13px;
+  }
+  .library-bottom ul li .info-container {
+    left: 5vw;
+  }
+  .songname {
+    font-size: 13px;
+  }
+  .songtime {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 600px) {
+  .library-bottom ul li {
+    font-size: 13px;
+  }
+  .library-bottom ul li .info-container {
+    left: 10vw;
+  }
+  .songname {
+    font-size: 10px;
+  }
+  .songtime {
+    font-size: 10px;
+  }
+  .footer {
+    font-size: 10px;
+  }
+  .right-playlists {
+    padding: 10px;
+  }
+  .playlist-card {
+    width: 190px;
+  }
+  .right-play {
+    opacity: 1;
+  }
+  .playlist-card img {
+    width: 100%;
+    height: 100%;
+  }
+  .playlist-card h2 {
+    font-size: 14px;
+  }
+  .playlist-card p {
+    font-size: 11px;
+  }
+  .playbar {
+    bottom: 0;
+    width: 95%;
+    right: 2.5%;
+  }
+  .songtime {
+    font-size: 12px;
+  }
+  .songname {
+    font-size: 12px;
+  }
+  .right-play {
+    right: 10px;
+    bottom: 10px;
+  }
+  .close-ham {
+    right: 10px;
+  }
+  .hamburger {
+    left: 10px;
   }
 }
