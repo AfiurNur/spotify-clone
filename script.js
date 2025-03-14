@@ -103,7 +103,6 @@ async function displayAlbums() {
     const div = document.createElement("div");
     div.innerHTML = text;
     const anchors = div.querySelectorAll("a[href]");
-    const albumContainer = document.querySelector(".album-container"); // Ensure this container exists in your HTML
 
     for (const anchor of anchors) {
       const href = anchor.href;
