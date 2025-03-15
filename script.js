@@ -1,4 +1,4 @@
-console.log("Spotify Clone by AFIUR NUR");
+
 let currentSong = new Audio();
 let currentFolder;
 let currentSongIndex = -1;
@@ -229,3 +229,4 @@ async function main() {
 }
 
 main();
+console.log("Spotify Clone by AFIUR NUR");
